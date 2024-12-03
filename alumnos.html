@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("img/Simple\ Shiny\(4\).svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        #inicio {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #inicio:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+
+        aside {
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        aside p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button type="button" id="inicio" onclick="location.href='index.html'">Volver al Inicio</button>
+        <h1>Aplicación de Exámenes Tipo Test</h1>
+    </header>
+    <main>
+        <aside>
+            <p>Realizar Examen</p>
+        </aside>
+        <aside>
+            <p>Comprobar Examen</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aplicación de Exámenes Tipo Test</p>
+    </footer>
+</body>
+</html>
