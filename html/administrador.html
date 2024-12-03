@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title>Document</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,7 @@
         }
 
         body {
-            background-image: url("img/Simple\ Shiny\(4\).svg");
+            background-image: url("/img/Simple\ Shiny\(1\).svg");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -26,31 +26,28 @@
         header {
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.8);
             color: white;
             padding: 10px 0;
-            position: relative;
+            text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 20px;
+            font-size: 24px;
         }
 
         #inicio {
-            position: absolute;
-            top: 10px;
-            left: 10px;
+            margin-top: 10px;
             padding: 10px 20px;
             font-size: 16px;
             background-color: #007BFF;
             color: white;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
         }
 
         #inicio:hover {
@@ -60,28 +57,36 @@
         main {
             flex: 1;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
             gap: 20px;
         }
 
         aside {
-            width: 80%;
-            max-width: 400px;
-            padding: 20px;
+            flex: 1;
+            padding: 30px;
             border: 2px solid #333;
             border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        aside p {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             color: #333;
+            height: 250px;
+        }
+        aside p{
+            margin-top: 70px;
+            width: auto;
         }
 
         footer {
@@ -101,28 +106,21 @@
 </head>
 <body>
     <header>
-        <button type="button" id="inicio" onclick="location.href='index.html'">Volver al Inicio</button>
         <h1>Aplicación de Exámenes Tipo Test</h1>
+        <button type="button" id="inicio" onclick="location.href='index.html'">Volver al Inicio</button>
     </header>
     <main>
-        <aside>
-            <p>Realizar Examen</p>
-        </aside>
-
-        <aside>
-            <p>Comprobar Examen</p>
-        </aside>
-
-        <aside>
-            <p>Crear Categoria</p>
-        </aside>
-        
-        <aside>
-            <p>Ver Resultados</p>
-        </aside>
+        <div class="container">
+            <aside>
+                <p>Área Profesor</p>
+            </aside>
+            <aside>
+                <p>Área Alumno</p>
+            </aside>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Aplicación de Exámenes Tipo Test.</p>
+        <p>&copy; 2024 Aplicación de Exámenes Tipo Test</p>
     </footer>
 </body>
 </html>
